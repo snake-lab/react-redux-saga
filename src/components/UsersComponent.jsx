@@ -8,9 +8,9 @@ const Users = () => {
   const users = useSelector((state) => state.users.users);
   const loading = useSelector((state) => state.users.loading);
   const error = useSelector((state) => state.users.error);
-  useEffect(() => {
-    dispatch(getUsers([]));
-  }, []);
+  // useEffect(() => {
+  //   dispatch(getUsers());
+  // }, []);
   return (
     <>
       {users.length && <p>Loading ...</p>}
